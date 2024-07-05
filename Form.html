@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    form:hover
+    {
+        box-shadow: -5px 5px  #1f6f78;
+        position:relative;
+    }
+    form{
+        margin:0px;
+        padding:30px 30px;
+        display:inline-block;
+        position:relative;
+        text-align:center;
+        background: #3baea0; 
+        overflow:hidden;
+        height:350px;
+    }
+    input{
+        display:inline-block;
+        width:100%;
+        height:25px;
+        margin:10px 0px ;
+        background: #d1f1e4f1;
+        border-radius:4px;
+    }
+    input:hover
+    {
+        box-shadow:-3px 3px 0px #1f6f78;
+        transition:linear 0.30s;
+        background-color:#63f3b9f1;
+    }
+    input[type=submit]
+    {
+        width:101%;
+        height:35px;
+        margin-top:25px;
+        background-color: #1f6f78;
+        color:aqua;
+        font-family:Arial;
+        font-size:18px;
+    }
+    input[type=submit]:hover
+    {
+        box-shadow:-3px 3px 0px #b8e6ec;
+        transition:linear 0.30s;
+        background-color:rgb(144, 236, 205);
+        color:#06584f;
+        transition:linear 0.3s;
+    }
+</style>
+<body>
+    <h2 style="Text-align:center">FORM</h2>
+    <div class="container">
+    <form action="Submit.html">
+        <lable for="firstname">First Name</lable>
+        <input type="text" placeholder="Enter First name">
+        <lable for="lastname">Last Name</lable>
+        <input type="text" placeholder="Enter Last name">
+        <lable for="email">E-mail</lable>
+        <input type="email" placeholder="Enter Email address">
+        <lable for="password">password</lable>
+        <input type="password" placeholder="Enter Password">
+        <input type="Submit">
+    </form>
+    </div><!--contaioner-->
+</body>
+</html>
